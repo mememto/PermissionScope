@@ -319,7 +319,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
     - returns: UIButton instance with a custom style.
     */
     func permissionStyledButton(type: PermissionType) -> UIButton {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 220, height: 40))
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 240, height: 40))
         button.setTitleColor(permissionButtonTextColor, forState: .Normal)
         button.titleLabel?.font = buttonFont
 
@@ -370,9 +370,9 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
     - returns: UILabel instance with a custom style.
     */
     func permissionStyledLabel(type: PermissionType) -> UILabel {
-        let label  = UILabel(frame: CGRect(x: 0, y: 0, width: 260, height: 50))
+        let label  = UILabel(frame: CGRect(x: 0, y: 0, width: 260, height: 60))
         label.font = labelFont
-        label.numberOfLines = 2
+        label.numberOfLines = 0
         label.textAlignment = .Center
         label.text = permissionMessages[type]
         label.textColor = permissionLabelColor
