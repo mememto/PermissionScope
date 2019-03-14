@@ -1,0 +1,7 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - R.generated.swift
+
+line_length:
+  - 250 # warning
+  - 400 # error
